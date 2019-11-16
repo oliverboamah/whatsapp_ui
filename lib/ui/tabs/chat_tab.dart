@@ -10,33 +10,45 @@ class ChatTab extends StatefulWidget {
 class _ChatTabState extends State<ChatTab> {
   List<ChatData> chatDataList = [
     ChatData(
-        image: 'oliver.png',
-        title: 'Livbach Youth Ministry',
-        detail: 'Richie: Shalom!'),
+        image: 'assets/images/oliver.png',
+        title: 'Livbach Youth Ministry invites you all niggaz to the party',
+        detail: 'Richie: Shalom!',
+        messageCount: 7,
+        isMuted: true,
+        time: '06:45'),
     ChatData(
-        image: 'oliver.png',
+        image: 'assets/images/oliver.png',
         title: 'Livbach Youth Ministry',
-        detail: 'Richie: Shalom!'),
+        detail: 'Richie: Shalom!',
+        messageCount: 3,
+        time: '06:45'),
     ChatData(
-        image: 'oliver.png',
+        image: 'assets/images/oliver.png',
         title: 'Livbach Youth Ministry',
-        detail: 'Richie: Shalom!'),
+        detail: 'Richie: Shalom!',
+        messageCount: 1,
+        time: '06:45'),
     ChatData(
-        image: 'oliver.png',
+        image: 'assets/images/oliver.png',
         title: 'Livbach Youth Ministry',
-        detail: 'Richie: Shalom!'),
+        detail: 'Richie: Shalom!',
+        isMuted: true,
+        time: '06:45'),
     ChatData(
-        image: 'oliver.png',
+        image: 'assets/images/oliver.png',
         title: 'Livbach Youth Ministry',
-        detail: 'Richie: Shalom!'),
+        detail: 'Richie: Shalom!',
+        time: '06:45'),
     ChatData(
-        image: 'oliver.png',
+        image: 'assets/images/oliver.png',
         title: 'Livbach Youth Ministry',
-        detail: 'Richie: Shalom!'),
+        detail: 'Richie: Shalom!',
+        time: '06:45'),
     ChatData(
-        image: 'oliver.png',
+        image: 'assets/images/oliver.png',
         title: 'Livbach Youth Ministry',
-        detail: 'Richie: Shalom!'),
+        detail: 'Richie: Shalom!',
+        time: '06:45'),
   ];
 
   @override

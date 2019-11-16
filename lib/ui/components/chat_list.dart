@@ -23,9 +23,11 @@ class _ChatListState extends State<ChatList> {
         scrollDirection: Axis.vertical,
         shrinkWrap: true,
         itemBuilder: (BuildContext context, int position) {
-          return InkWell(
-            child: Chat(chatData: this.widget.chatDataList[position]),
-            onTap: this.widget.onChatClicked(position),
+          return Container(
+            child: InkWell(
+              child: ChatItem(chatData: this.widget.chatDataList[position]),
+              onTap: this.widget.onChatClicked(position),
+            ),
           );
         },
         itemCount: this.widget.chatDataList.length);
