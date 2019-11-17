@@ -37,7 +37,7 @@ class ChatItem extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Padding(
-                        padding: const EdgeInsets.only(bottom: 8.0),
+                        padding: const EdgeInsets.only(bottom: 6.0),
                         child: Text(
                           this.chatData.title,
                           maxLines: 1,
