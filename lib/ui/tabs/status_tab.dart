@@ -2,7 +2,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+
+// my app imports
 import 'package:whatsapp_ui/ui/components/status/add_status.dart';
+import 'package:whatsapp_ui/ui/components/status/updates_header.dart';
 import 'package:whatsapp_ui/ui/values/colors.dart';
 
 class StatusTab extends StatefulWidget {
@@ -16,7 +19,7 @@ class _StatusTabState extends State<StatusTab> {
     return Scaffold(
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: <Widget>[AddStatus()],
+        children: <Widget>[AddStatus(), UpdatesHeader()],
       ),
       floatingActionButton: Column(
         mainAxisAlignment: MainAxisAlignment.end,
