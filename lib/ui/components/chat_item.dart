@@ -13,7 +13,7 @@ import 'package:whatsapp_ui/ui/values/colors.dart';
 class ChatItem extends StatelessWidget {
   final ChatData chatData;
 
-  ChatItem({this.chatData});
+  ChatItem({@required this.chatData});
 
   @override
   Widget build(BuildContext context) {
