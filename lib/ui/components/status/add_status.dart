@@ -40,28 +40,35 @@ class AddStatus extends StatelessWidget {
               ],
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.only(left: 16.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                Padding(
-                  padding: const EdgeInsets.only(bottom: 6.0),
-                  child: Text(
-                    this.title,
-                    style:
-                        TextStyle(
-                          fontWeight: FontWeight.bold, 
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.only(left: 16.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 6.0),
+                    child: Text(
+                      this.title,
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold,
                           color: Colors.black,
-                          fontSize: 16
-                        ),
+                          fontSize: 16),
+                    ),
                   ),
-                ),
-                Text(
-                  subTitle,
-                  style: TextStyle(color: SECONDARY_TEXT_COLOR),
-                )
-              ],
+                  Text(
+                    subTitle,
+                    style: TextStyle(color: SECONDARY_TEXT_COLOR),
+                  )
+                ],
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(right: 16.0),
+            child: Icon(
+              Icons.more_horiz,
+              color: PRIMARY_COLOR,
             ),
           )
         ],
