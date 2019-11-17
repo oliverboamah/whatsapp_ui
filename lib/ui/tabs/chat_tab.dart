@@ -1,6 +1,11 @@
+// flutter imports
+import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+
+// my app imports
 import 'package:whatsapp_ui/ui/components/chat_list.dart';
 import 'package:whatsapp_ui/ui/holders/chat_data.dart';
+import 'package:whatsapp_ui/ui/values/colors.dart';
 
 class ChatTab extends StatefulWidget {
   @override
@@ -53,9 +58,16 @@ class _ChatTabState extends State<ChatTab> {
 
   @override
   Widget build(BuildContext context) {
-    return ChatList(
-      chatDataList: chatDataList,
-      onChatClicked: (position) => print(position),
+    return Scaffold(
+      body: ChatList(
+        chatDataList: chatDataList,
+        onChatClicked: (position) => print(position),
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.mail),
+        backgroundColor: ACCENT_COLOR,
+        onPressed: () => {},
+      ),
     );
   }
 }
