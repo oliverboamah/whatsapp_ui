@@ -42,7 +42,7 @@ class ChatItem extends StatelessWidget {
                           this.chatData.title,
                           maxLines: 1,
                           style: TextStyle(
-                              color: Colors.black, fontWeight: FontWeight.bold),
+                              color: Colors.black, fontWeight: FontWeight.bold, fontSize: 16),
                         )),
                     Text(
                       this.chatData.detail,
