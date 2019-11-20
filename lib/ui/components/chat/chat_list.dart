@@ -26,7 +26,7 @@ class _ChatListState extends State<ChatList> {
           return Container(
             child: InkWell(
               child: ChatItem(chatData: this.widget.chatDataList[position]),
-              onTap: this.widget.onChatClicked(position),
+              onTap: () => this.widget.onChatClicked(position),
             ),
           );
         },
