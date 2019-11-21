@@ -12,7 +12,15 @@ class Routes {
   Routes({this.context});
 
   navigateToChatDetail(ChatData chatData) {
-    Navigator.push(context,
-        MaterialPageRoute(builder: (context) => ChatDetail(chatData: chatData,)));
+    Navigator.push(
+        context,
+        MaterialPageRoute(
+            builder: (context) => ChatDetail(
+                  chatData: chatData,
+                )));
+  }
+
+  goBack() {
+    Navigator.pop(context);
   }
 }

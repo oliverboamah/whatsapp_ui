@@ -24,7 +24,7 @@ class _ChatDetailState extends State<ChatDetail> {
         children: <Widget>[
           IndividualChatDetailAppBar(
             chatData: this.widget.chatData,
-          )
+          ),
         ],
       ),
     );
